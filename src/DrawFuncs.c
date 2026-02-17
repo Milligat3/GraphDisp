@@ -24,7 +24,7 @@ void DrawGraph(Graph graph){
 		}
 		
 	}
-	char to_disp[2];
+	char to_disp[256];
 	for(int k = 0; k < graph.size; k++){
 		DrawCircleV(MyVec2RayVec2(graph.Verts[k].pos), CIRCLE_RADIUS, GREEN);
 		sprintf(to_disp, "%d", k + 1);
